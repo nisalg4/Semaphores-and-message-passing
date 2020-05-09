@@ -1,0 +1,10 @@
+all: fish pellet swimmill
+
+fish:fish.c
+	gcc -o fish fish.c
+	
+pellet:pellet.c
+	gcc -pthread -o pellet pellet.c
+	
+swimmill:swimmill.c
+	gcc -o swimmill swimmill.c
